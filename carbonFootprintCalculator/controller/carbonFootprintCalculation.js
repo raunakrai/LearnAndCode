@@ -1,18 +1,22 @@
 const {averageSpamFootprint, averageInboxFootprint, averageSentFootprint, averageEmailAttachmentFootprint}  = require('../model/carbonFootprintData');
 
-function getSpamCarbonFootprint(totalMarks){
+function getSpamCarbonFootprint(totalMarks)
+{
     return totalMarks * averageSpamFootprint
 }
 
-function getInboxCarbonFootprint(totalMarks){
+function getInboxCarbonFootprint(totalMarks)
+{
     return totalMarks * averageInboxFootprint
 }
 
-function getSentCarbonFootprint(totalMarks){
+function getSentCarbonFootprint(totalMarks)
+{
     return totalMarks * averageSentFootprint
 }
 
-function getEmailAttachmentCarbonFootprint(totalMarks){
+function getEmailAttachmentCarbonFootprint(totalMarks)
+{
     return totalMarks * averageEmailAttachmentFootprint
 }
 
